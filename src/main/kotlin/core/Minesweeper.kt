@@ -53,9 +53,6 @@ class Minesweeper(private val game: Game, private val english: Boolean = true) {
 
         mainLoop@ while (true) {
 
-            println("Cells discovered: ${game.cellsDiscovered}")
-            println("Save cells: $numberOfSaveCells")
-
             Draw.printBoard(gameScreen)
 
             val choice = readln()
