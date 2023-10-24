@@ -13,12 +13,5 @@ enum class Cell(val dir: String) {
     MARK("🟥"),
     EMPTY("🟦"),
     MINE("💣");
-
-    companion object {
-        fun isNumericCell(value: Cell): Boolean {
-            val numericCells: Array<Cell> = arrayOf(ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT)
-            return numericCells.contains(value)
-        }
-    }
 }
 

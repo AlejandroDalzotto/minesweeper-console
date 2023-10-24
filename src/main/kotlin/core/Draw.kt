@@ -4,7 +4,6 @@ import models.Cell
 import utils.countAdjacentMines
 
 class Draw {
-
     companion object {
 
         fun drawMarkMine(screen: MutableList<MutableList<Cell>>, row: Int, col: Int) {

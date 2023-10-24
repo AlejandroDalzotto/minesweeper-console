@@ -18,4 +18,19 @@ class OutputMessage(player: String = "Unknown", english: Boolean = true) {
         if (english) "Coordinates are out of range, try again"
         else "Las coordenadas están fuera de rango, inténtalo de nuevo"
 
+    val onUserInputName =
+        if (english) "Enter a username: "
+        else "Ingresa un nombre de usuario: "
+
+    val onUserInputRows =
+        if (english) "Enter the number of rows on the board: "
+        else "Ingresa la cantidad de filas del tablero: "
+
+    val onUserInputColumn =
+        if (english) "Enter the number of columns on the board: "
+        else "Ingresa la cantidad de columnas del tablero: "
+
+    val onUserInputMines =
+        if (english) "Enter the number of mines: "
+        else "Ingresa la cantidad de minas: "
 }

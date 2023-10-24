@@ -1,8 +1,11 @@
 import core.Minesweeper
-import models.Game
+import utils.beginning
+import utils.setNewGame
 
 fun main() {
-    val game = Game("Dlz", 5, 10, 5)
+    beginning()
+
+    val game = setNewGame()
     val minesweeper = Minesweeper(game)
 
     minesweeper.play()

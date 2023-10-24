@@ -1,6 +1,37 @@
 package utils
 
 import models.Cell
+import models.Game
+import models.OutputMessage
+
+fun setNewGame(): Game {
+
+    val output = OutputMessage()
+
+    println(output.onUserInputName)
+    val player = readln()
+
+    println(output.onUserInputRows)
+    val rows = readln().toInt()
+
+    println(output.onUserInputColumn)
+    val cols = readln().toInt()
+
+    println(output.onUserInputMines)
+    val mines = readln().toInt()
+
+    return Game(player, rows, cols, mines)
+}
+fun beginning() {
+
+    val keyWords = arrayOf("Welcome", "to Minesweeper", "in console")
+
+    keyWords.forEach {
+
+        val remainingLength = (45 - it.length) / 2
+        println("*" + "-".repeat(remainingLength) + " $it " + "-".repeat(remainingLength) + "*")
+    }
+}
 
 fun isValidInput(value: String): Boolean {
     val regex = Regex("""^\d+x\d+(\s+-mark)?$""")
