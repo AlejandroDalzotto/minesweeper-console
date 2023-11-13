@@ -55,6 +55,7 @@ class Minesweeper(private val game: Game, private val english: Boolean = true) {
 
             Draw.printBoard(gameScreen)
 
+            print(output.onUserInputValue)
             val choice = readln()
 
             if (isValidInput(choice)) {

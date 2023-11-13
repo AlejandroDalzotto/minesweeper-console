@@ -33,4 +33,8 @@ class OutputMessage(player: String = "Unknown", english: Boolean = true) {
     val onUserInputMines =
         if (english) "Enter the number of mines: "
         else "Ingresa la cantidad de minas: "
+
+    val onUserInputValue =
+        if (english) "Enter row and column (e.g., 1x2): "
+        else "Ingresa la fila y columna (Ejemplo, 1x2): "
 }

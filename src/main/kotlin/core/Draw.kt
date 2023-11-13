@@ -28,10 +28,11 @@ class Draw {
         fun printBoard(board: MutableList<MutableList<Cell>>) {
 
             board.forEachIndexed { index, row ->
+                print("$index| ")
                 row.forEach { col ->
                     print(col.dir)
                 }
-                println("| $index")
+                println()
             }
         }
 
